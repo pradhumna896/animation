@@ -49,14 +49,14 @@ class ImageWidget extends StatelessWidget {
 
   Widget buildImage() => SizedBox.expand(
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
+          borderRadius: const BorderRadius.all(Radius.circular(8)),
           child: Image.asset(location.urlImage, fit: BoxFit.cover),
         ),
       );
 
   Widget buildTopText() => Text(
         location.name,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
           fontSize: 20,

@@ -30,9 +30,9 @@ class _LocationsWidgetState extends State<LocationsWidget> {
           ),
           Text(
             '${pageIndex + 1}/${locations.length}',
-            style: TextStyle(color: Colors.white70),
+            style: const TextStyle(color: Colors.white70),
           ),
-          SizedBox(height: 12)
+          const SizedBox(height: 12)
         ],
       );
 }

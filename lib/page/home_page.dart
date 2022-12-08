@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import '../widget/locations_widget.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(45) ,
+          preferredSize: const Size.fromHeight(45) ,
           child: buildAppBar()),
         body: LocationsWidget(),
         bottomNavigationBar: buildBottomNavigation(),
@@ -17,16 +19,16 @@ class HomePage extends StatelessWidget {
   Widget buildAppBar(){ return AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: Text('INTERESTS'),
+        title: const Text('INTERESTS'),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.location_pin),
+            icon: const Icon(Icons.location_pin),
             onPressed: () {},
           ),
         ],
         leading: IconButton(
-          icon: Icon(Icons.search_outlined),
+          icon: const Icon(Icons.search_outlined),
           onPressed: () {},
         ),
       );}

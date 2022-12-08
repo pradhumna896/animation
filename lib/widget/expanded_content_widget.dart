@@ -7,14 +7,14 @@ import '../model/location.dart';
 class ExpandedContentWidget extends StatelessWidget {
   final Location location;
 
-  const ExpandedContentWidget({
+   const ExpandedContentWidget({Key? key, 
     required this.location,
    
-  }) ;
+  }) : super(key: key) ;
 
   @override
   Widget build(BuildContext context) => Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
@@ -24,9 +24,9 @@ class ExpandedContentWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(location.addressLine1),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             buildAddressRating(location: location),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             buildReview(location: location)
           ],
         ),
@@ -40,7 +40,7 @@ class ExpandedContentWidget extends StatelessWidget {
         children: [
           Text(
             location.addressLine2,
-            style: TextStyle(color: Colors.black45),
+            style: const TextStyle(color: Colors.black45),
           ),
           StarsWidget(stars: location.starRating),
         ],

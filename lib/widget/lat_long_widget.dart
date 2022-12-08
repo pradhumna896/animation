@@ -6,10 +6,11 @@ import '../model/location.dart';
 class LatLongWidget extends StatelessWidget {
   final Location location;
 
-  const LatLongWidget({
+  
+   const LatLongWidget({Key? key, 
     required this.location,
     
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) => Row(
