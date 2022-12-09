@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../widget/locations_widget.dart';
 
 class HomePage extends StatelessWidget {

@@ -1,5 +1,3 @@
-
-
 import '../model/review.dart';
 
 class Reviews {

@@ -1,5 +1,3 @@
-
-
 import 'package:animation/model/review.dart';
 
 class Location {

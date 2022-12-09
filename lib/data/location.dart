@@ -1,5 +1,4 @@
 import 'package:animation/data/review.dart';
-
 import '../model/location.dart';
 
 List<Location> locations = [

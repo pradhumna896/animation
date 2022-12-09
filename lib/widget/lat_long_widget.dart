@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../model/location.dart';
 
 class LatLongWidget extends StatelessWidget {

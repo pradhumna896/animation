@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../model/location.dart';
 import 'lat_long_widget.dart';
 

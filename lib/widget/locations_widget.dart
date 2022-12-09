@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-
-
 import '../data/location.dart';
 import 'location_widget.dart';
 
 class LocationsWidget extends StatefulWidget {
+  const LocationsWidget({Key? key}) : super(key: key);
+
   @override
   _LocationsWidgetState createState() => _LocationsWidgetState();
 }

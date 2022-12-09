@@ -1,7 +1,5 @@
 import 'package:animation/widget/starts_widget.dart';
 import 'package:flutter/material.dart';
-
-
 import '../model/location.dart';
 
 class ExpandedContentWidget extends StatelessWidget {
